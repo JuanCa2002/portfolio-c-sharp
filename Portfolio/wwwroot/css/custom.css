@@ -1,0 +1,33 @@
+﻿#profile-image {
+    width: 200px;
+    height: 200px;
+}
+
+.welcome-section {
+    margin: 5rem 0 10rem 0;
+    color: white;
+}
+
+.welcome-section p {
+    text-align: justify;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.skills {
+    box-shadow: 0 5px 5px 0 gray;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills i {
+    color: #0d6efd;
+    font-size: 50px;
+}
