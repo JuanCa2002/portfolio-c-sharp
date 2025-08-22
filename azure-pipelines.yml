@@ -30,14 +30,13 @@ steps:
     restoreSolution: '$(solution)'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Building Artifacts...'
+  displayName: 'Build & Publish'
   inputs: 
     command: publish
     publishWebProjects: false
     projects: $(proyecto)
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) --runtime win-x86 --self-contained'
-    zipAfterPublish: false
-    modifyOutputPath: false
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publishing Artifacts...'
